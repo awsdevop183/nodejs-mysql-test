@@ -4,7 +4,7 @@ This project demonstrates how to set up a Node.js app in Docker to connect with 
 
 1. Install docker on Ubuntu
 ```sudo apt update -y && sudo curl https://get.docker.com | bash```
-2. Make directory structure as per the project, create required files and paste the content
+2. `git clone https://github.com/awsdevop183/nodejs-mysql-test.git`
 
 3. Update app.js file with appropriate DB credentials
 
@@ -51,14 +51,14 @@ INSERT INTO movies (title, genre, release_year) VALUES
 
 
 
-git clone https://github.com/awsdevop183/aws-rds-test.git
+`git clone https://github.com/awsdevop183/nodejs-mysql-test.git`
 
-cd aws-rds-test
+cd nodejs-mysql-tes
 
 Update app.js with Mysql Instance Private IP
 
-docker build -t movies .
+`docker build -t movies .`
 
-docker run -d --name movies -p 80:3000 movies
+`docker run -d --name movies -p 80:3000 movies`
 
-docker update --restart=always movies
+`docker update --restart=always movies`

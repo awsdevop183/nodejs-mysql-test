@@ -22,8 +22,8 @@ This project demonstrates how to set up a Node.js app in Docker to connect with 
 1. Create an EC2(Ubuntu) for Mysql
 2. Install Docker using `curl https://get.docker.com | bash`
 3. Then run `docker run -d --name mysql-server -e MYSQL_ROOT_PASSWORD=Admin123 -p 3306:3306 mysql:8.0`
-4. `Docker ps` (to get container_id)
-5. `Docker exec -it container_id bash`
+4. `docker ps` (to get container_id)
+5. `docker exec -it container_id bash`
 6. `mysql -u root -p (then enter admin password from above command)`
 
 7.   ```CREATE USER 'admin'@'%' IDENTIFIED BY 'Admin123';

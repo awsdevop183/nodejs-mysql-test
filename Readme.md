@@ -30,7 +30,8 @@ This project demonstrates how to set up a Node.js app in Docker to connect with 
       CREATE USER 'admin'@'%' IDENTIFIED BY 'Admin123';
       GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%' WITH GRANT OPTION;
       FLUSH PRIVILEGES;
-      CREATE DATABASE movieDB;```
+      CREATE DATABASE movieDB;
+   ```
 
 8. `USE movieDB;`
 ```

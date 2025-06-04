@@ -18,6 +18,14 @@ const db = mysql.createPool({
   queueLimit: 0
 });
 
+// Use this if you want to use environment variables instead
+// const db = mysql.createConnection({
+//   host: process.env.DB_HOST || 'terraform-20241028035825138600000004.craayaco8wd0.us-east-1.rds.amazonaws.com',
+//   user: process.env.DB_USER || 'admin',
+//   password: process.env.DB_PASSWORD || 'Admin123',
+//   database: process.env.DB_NAME || 'movieDB'
+// });  
+
 // Example: test connection on each request
 app.use((req, res, next) => {
   db.getConnection((err, connection) => {
